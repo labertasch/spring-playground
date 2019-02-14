@@ -1,0 +1,32 @@
+|===
+|Path|Type|Description
+
+|`+page+`
+|`+Object+`
+|pagination infromation
+
+|`+page.size+`
+|`+Number+`
+|max number of items per request
+
+|`+page.totalElements+`
+|`+Number+`
+|total elements found in database
+
+|`+page.totalPages+`
+|`+Number+`
+|number of pages (based on size parameter
+
+|`+page.number+`
+|`+Number+`
+|current page number
+
+|`+_embedded.books+`
+|`+Array+`
+|An array of <<resources-books,Book resources>>
+
+|`+_links+`
+|`+Object+`
+|<<resources-tags-list-links, Links>> to other resources
+
+|===

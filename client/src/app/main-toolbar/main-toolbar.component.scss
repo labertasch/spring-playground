@@ -1,0 +1,33 @@
+@import "~@angular/material/theming";
+
+:host {
+  .main-toolbar {
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    .spacer {
+      flex: 1 1 auto;
+    }
+
+    .me {
+      cursor: pointer;
+    }
+
+    :host-context(.highlight-false) {
+      .main-toolbar {
+        background: none;
+      }
+    }
+
+    :host-context(.highlight-true) {
+      background-color: green;
+    }
+    @media ($mat-small) {
+      mat-icon {
+        width: 15px;
+        font-size: 18px;
+        line-height: 7px;
+      }
+    }
+  }
+}

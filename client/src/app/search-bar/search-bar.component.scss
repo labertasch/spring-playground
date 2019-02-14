@@ -1,0 +1,80 @@
+@import "~@angular/material/theming";
+
+.search-bar {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  z-index: 400;
+
+  :host-context(.highlight-true) {
+    .search-bar {
+      top: 55px;
+      position: fixed;
+      @include mat-elevation(2);
+      .search-box {
+        .search-box-header {
+          max-height: 0px;
+          opacity: 0;
+        }
+        @include mat-elevation(4);
+      }
+    }
+  }
+
+  .search-box {
+    opacity: 1;
+    transform: scale3d(0, 0, 0);
+    animation: dissolveAnimation 2s forwards;
+    animation-delay: 0.5s;
+    max-height: auto;
+    @include mat-elevation(2);
+    .search-box--search-icon {
+      font-size: 55px;
+    }
+
+    .search-box-header {
+      max-height: 90px;
+      transition: all 0.5s;
+    }
+  }
+  @include mat-elevation(0);
+
+  .search-form {
+    display: flex;
+    flex-direction: row;
+    > * {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+
+  .alternate-search-box {
+    display: none;
+    font-size: 14px;
+  }
+
+  .alternate-search-box > * {
+    width: 80%;
+  }
+  @media ($mat-small) {
+    padding: 20px;
+    .search-box {
+      display: none;
+    }
+
+    .alternate-search-box {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      padding: 0;
+      margin: 5px;
+      > * {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+  }
+}

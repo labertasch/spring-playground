@@ -1,0 +1,8 @@
+ch/napohaku/playground/api/security/UserInfoController.class
+ch/napohaku/playground/api/Application.class
+ch/napohaku/playground/api/books/BookController.class
+ch/napohaku/playground/api/books/BookRepository.class
+ch/napohaku/playground/api/books/Book.class
+ch/napohaku/playground/api/config/RestRepositoryConfig.class
+ch/napohaku/playground/api/config/SecurityConfig.class
+ch/napohaku/playground/api/security/User.class

@@ -1,0 +1,4 @@
+[source,bash]
+----
+$ curl 'http://localhost:8080/api/books/search/fulltext?criteria=Book' -i -X GET
+----

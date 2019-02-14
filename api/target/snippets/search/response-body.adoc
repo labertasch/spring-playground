@@ -1,0 +1,31 @@
+[source,options="nowrap"]
+----
+{
+  "_embedded" : {
+    "books" : [ {
+      "title" : "A Book A Title",
+      "description" : "Some Description",
+      "publicationDate" : "2018-10-01T00:00:00.000+0000",
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/api/books/5bc9d2278c0833e006befe1a"
+        },
+        "book" : {
+          "href" : "http://localhost:8080/api/books/5bc9d2278c0833e006befe1a"
+        }
+      }
+    } ]
+  },
+  "_links" : {
+    "self" : {
+      "href" : "http://localhost:8080/api/books/search/fulltext?criteria=Book&page=0&size=20"
+    }
+  },
+  "page" : {
+    "size" : 20,
+    "totalElements" : 1,
+    "totalPages" : 1,
+    "number" : 0
+  }
+}
+----

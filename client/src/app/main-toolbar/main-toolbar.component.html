@@ -1,0 +1,25 @@
+<mat-toolbar color="primary" class="main-toolbar">
+  <h1 class="library-title">
+    <mat-icon>local_library</mat-icon> Book Library
+  </h1>
+  <span class="spacer"></span>
+  <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      <mat-icon>language</mat-icon>
+      <span>API Browser</span>
+    </button>
+    <mat-divider></mat-divider>
+    <button mat-menu-item>
+      <mat-icon>help</mat-icon>
+      <span>API Documentation</span>
+    </button>
+    <mat-divider></mat-divider>
+    <button mat-menu-item>
+      <mat-icon>power_settings_new</mat-icon>
+      <span>Logout</span>
+    </button>
+  </mat-menu>
+</mat-toolbar>

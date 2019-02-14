@@ -1,0 +1,78 @@
+# Created on 2018-10-15T17:51:14.756
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+# Created on 2018-10-15T17:51:14.765
+Unexpected IOException with stream: 2018-10-15 17:51:14.764  INFO 73736 --- [           main] d.f.embed.process.runtime.Executable     : start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@4a660b34
+
+
+# Created on 2018-10-15T17:51:14.767
+Unexpected IOException with stream: 2018-10-15 17:51:14.766  WARN 73736 --- [      Thread-15] d.flapdoodle.embed.mongo.runtime.Mongod  : sendShutdown /127.0.0.1:57062
+
+java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_131]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_131]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_131]
+	at de.flapdoodle.embed.mongo.runtime.Mongod.sendShutdown(Mongod.java:87) ~[de.flapdoodle.embed.mongo-2.0.3.jar:na]
+	at de.flapdoodle.embed.mongo.AbstractMongoProcess.sendStopToMongoInstance(AbstractMongoProcess.java:133) [de.flapdoodle.embed.mongo-2.0.3.jar:na]
+	at de.flapdoodle.embed.mongo.AbstractMongoProcess.stopInternal(AbstractMongoProcess.java:107) [de.flapdoodle.embed.mongo-2.0.3.jar:na]
+	at de.flapdoodle.embed.process.runtime.AbstractProcess.stop(AbstractProcess.java:177) [de.flapdoodle.embed.process-2.0.2.jar:na]
+	at de.flapdoodle.embed.process.runtime.Executable.stop(Executable.java:80) [de.flapdoodle.embed.process-2.0.2.jar:na]
+	at de.flapdoodle.embed.process.runtime.Executable$JobKiller.run(Executable.java:97) [de.flapdoodle.embed.process-2.0.2.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+
+
+
+# Created on 2018-10-15T17:51:14.772
+Unexpected IOException with stream: 2018-10-15 17:51:14.771  INFO 73736 --- [           main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:57062], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+
+
+# Created on 2018-10-15T17:51:14.784
+Unexpected IOException with stream: 2018-10-15 17:51:14.773  INFO 73736 --- [           main] org.mongodb.driver.cluster               : Adding discovered server localhost:57062 to client view of cluster
+
+
+# Created on 2018-10-15T17:51:14.791
+Unexpected IOException with stream: 2018-10-15 17:51:14.791  INFO 73736 --- [localhost:57062] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server localhost:57062
+
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:62) ~[mongodb-driver-core-3.6.4.jar:na]
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:126) ~[mongodb-driver-core-3.6.4.jar:na]
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:114) ~[mongodb-driver-core-3.6.4.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_131]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_131]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_131]
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:59) ~[mongodb-driver-core-3.6.4.jar:na]
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:57) ~[mongodb-driver-core-3.6.4.jar:na]
+	... 3 common frames omitted
+
+
+
+# Created on 2018-10-15T17:51:14.868
+Unexpected IOException with stream: 2018-10-15 17:51:14.868  WARN 73736 --- [      Thread-15] d.f.embed.mongo.AbstractMongoProcess     : could not stop mongod with db command, try next
+
+
+# Created on 2018-10-15T17:51:14.869
+Unexpected IOException with stream: 2018-10-15 17:51:14.869  WARN 73736 --- [      Thread-15] d.f.embed.mongo.AbstractMongoProcess     : could not stop mongod, try next
+
+
+# Created on 2018-10-15T17:51:14.870
+Unexpected IOException with stream: 2018-10-15 17:51:14.869  WARN 73736 --- [      Thread-15] d.f.embed.mongo.AbstractMongoProcess     : could not stop mongod the second time, try one last thing
+
+
+# Created on 2018-10-15T17:51:14.871
+Unexpected IOException with stream: 2018-10-15 17:51:14.870  INFO 73736 --- [           main] org.mongodb.driver.cluster               : Cluster description not yet available. Waiting for 30000 ms before timing out
+
+

@@ -1,0 +1,48 @@
+<mat-toolbar #searchBar class="search-bar">
+  <mat-card class="search-box">
+    <mat-card-header class="search-box-header">
+      <div mat-card-avatar>
+        <mat-icon class="search-box--search-icon mat-primary">find_in_page</mat-icon>
+      </div>
+      <mat-card-title>Explore the Library</mat-card-title>
+      <mat-card-subtitle>Find and Sort Books in the Library</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <section class="search-form">
+        <mat-form-field>
+          <input floatLabel="false" matInput placeholder="Search Term">
+          <mat-icon matSuffix>search</mat-icon>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-select placeholder="Sort by">
+            <mat-optgroup label="Title">
+              <mat-option>Title ASC</mat-option>
+              <mat-option>Title Desc</mat-option>
+            </mat-optgroup>
+            <mat-optgroup label="Publication Date">
+              <mat-option>Publication Date ASC</mat-option>
+              <mat-option>Publication Date Desc</mat-option>
+            </mat-optgroup>
+          </mat-select>
+        </mat-form-field>
+      </section>
+    </mat-card-content>
+    <mat-card-actions align="end">
+      <button mat-button>Update Result</button>
+    </mat-card-actions>
+  </mat-card>
+  <div class="alternate-search-box">
+    <mat-form-field appearance="standard">
+      <input floatLabel="false" matInput placeholder="Find Books">
+      <mat-icon matSuffix>search</mat-icon>
+    </mat-form-field>
+    <mat-form-field appearance="standard">
+      <mat-select placeholder="Sort by">
+        <mat-option>Title ASC</mat-option>
+        <mat-option>Title Desc</mat-option>
+        <mat-option>Publication Date ASC</mat-option>
+        <mat-option>Publication Date Desc</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+</mat-toolbar>

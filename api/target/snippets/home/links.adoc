@@ -1,0 +1,13 @@
+|===
+|Relation|Description
+
+|`+search+`
+|Link to the search api
+
+|`+profile+`
+|discover the api
+
+|`+self+`
+|Link to the search api
+
+|===

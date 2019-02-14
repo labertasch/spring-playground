@@ -1,0 +1,10 @@
+/Users/senol/github/spring-playground/api/src/main/java/ch/napohaku/playground/api/config/BrowserAuthenticationEntryPoint.java
+/Users/senol/github/spring-playground/api/src/main/java/ch/napohaku/playground/api/Application.java
+/Users/senol/github/spring-playground/api/src/main/java/ch/napohaku/playground/api/config/RestRepositoryConfig.java
+/Users/senol/github/spring-playground/api/src/main/java/ch/napohaku/playground/api/security/UserInfoController.java
+/Users/senol/github/spring-playground/api/src/main/java/ch/napohaku/playground/api/books/BookController.java
+/Users/senol/github/spring-playground/api/src/main/java/ch/napohaku/playground/api/config/SecurityConfig.java
+/Users/senol/github/spring-playground/api/src/main/java/ch/napohaku/playground/api/books/Book.java
+/Users/senol/github/spring-playground/api/src/main/java/ch/napohaku/playground/api/DocumentationController.java
+/Users/senol/github/spring-playground/api/src/main/java/ch/napohaku/playground/api/security/User.java
+/Users/senol/github/spring-playground/api/src/main/java/ch/napohaku/playground/api/books/BookRepository.java

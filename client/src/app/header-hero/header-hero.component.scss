@@ -1,0 +1,22 @@
+:host {
+  .header-hero {
+    z-index: -20;
+    transition: height 0.2s ease-in-out;
+    margin-bottom: 0;
+    overflow: hidden;
+    &.inViewPort {
+      margin-bottom: 0px;
+    }
+    .header-hero--background-image {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
+        url("../../assets/library.jpg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+      z-index: -100;
+      width: 100%;
+      animation: heroAnimation 5s forwards;
+    }
+  }
+}
