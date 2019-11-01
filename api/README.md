@@ -1,7 +1,4 @@
 
-
-e as Canoo want to have a new Canoo Library Application. Therefore we’d like you to design and implement a simple REST API which uses JSON as the payload transport with the following user stories:
-
 - A user should be able to list all books order by e.g. (date of publication, alphabetically), maybe the results should be limited
 - A user should be able to add new books or edit information of an existing book.
 - Of course a user needs to be able to search for a book.
